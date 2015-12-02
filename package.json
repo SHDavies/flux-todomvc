@@ -23,7 +23,8 @@
     "flux": "^2.1.1",
     "keymirror": "^0.1.1",
     "object-assign": "^4.0.1",
-    "react": "^0.14.3"
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
   },
   "devDependencies": {
     "browserify": "^12.0.1",

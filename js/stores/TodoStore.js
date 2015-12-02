@@ -1,5 +1,5 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var EventEmitter = ('events').EventEmitter;
+var EventEmitter = require('events').EventEmitter;
 var TodoConstants = require('../constants/TodoConstants');
 var assign = require('object-assign');
 
@@ -39,7 +39,7 @@ function destroyCompleted() {
 }
 
 var TodoStore = assign({}, EventEmitter.prototype, {
-	areAllComplete: function {
+	areAllComplete: function() {
 		for(var id in _todos) {
 			if(!_todos[id].complete) {
 				return false;
